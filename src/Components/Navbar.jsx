@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -33,7 +32,7 @@ const Navbar = () => {
         </motion.div>
 
         {/* Desktop Menu (Centered) */}
-        <div className="hidden md:flex flex-1 justify-center space-x-8">
+        <div className="hidden md:flex flex-1 justify-center space-x-16">
           {["Home", "About", "Events", "Tickets", "Speakers", "Sponsors", "Gallery"].map(
             (item, index) => (
               <motion.div
@@ -42,15 +41,15 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 * index, duration: 0.4 }}
               >
-                <Link
-                  to={item.toLowerCase()}
-                  smooth={true}
-                  duration={500}
+                <a
+                  href={`#${item.toLowerCase()}`}
                   className="relative text-white text-lg font-medium cursor-pointer transition-all
-                             hover:text-cyan-400 hover:scale-105 hover:shadow-[0px_0px_10px_rgba(0,255,255,0.7)]"
+                             before:absolute before:-bottom-1 before:left-0 before:w-0 before:h-[2px]
+                             before:bg-gradient-to-r from-cyan-400 to-purple-500 before:transition-all before:duration-300
+                             hover:before:w-full hover:text-cyan-400"
                 >
                   {item}
-                </Link>
+                </a>
               </motion.div>
             )
           )}
@@ -85,16 +84,14 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 * index, duration: 0.4 }}
               >
-                <Link
-                  to={item.toLowerCase()}
-                  smooth={true}
-                  duration={500}
-                  className="text-white text-2xl font-bold tracking-wider transition-all 
-                             hover:text-cyan-400 hover:scale-110"
+                <a
+                  href={`#${item.toLowerCase()}`}
+                  className="text-white text-2xl font-bold tracking-wider transition-all
+                             hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r from-cyan-400 to-purple-500"
                   onClick={() => setIsOpen(false)}
                 >
                   {item}
-                </Link>
+                </a>
               </motion.div>
             )
           )}

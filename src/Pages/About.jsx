@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div id="about" className="relative bg-black text-white py-20 px-6 md:px-12">
+    <section id="about" className="relative bg-black text-white py-20 px-6 md:px-12">
       {/* Background Glows */}
       <div className="absolute w-full h-full">
         <div className="absolute top-16 left-10 w-40 h-40 bg-gradient-to-r from-purple-500 to-blue-500 blur-3xl opacity-30"></div>
@@ -88,7 +88,7 @@ const About = () => {
           </motion.div>
         </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 
