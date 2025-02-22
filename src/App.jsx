@@ -7,6 +7,7 @@ import Tickets from './Pages/Tickets'
 import Speakers from './Pages/Speakers'
 import Sponsors from './Pages/Sponsors'
 import Gallery from './Pages/Gallery'
+import FAQLocation from './Pages/FAQLocation'
 import Footer from './Pages/Footer'
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Speakers />
       <Sponsors />
       <Gallery />
+      <FAQLocation />
       <Footer />
     </div>
   )

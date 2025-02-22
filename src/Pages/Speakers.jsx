@@ -4,22 +4,22 @@ const speakersData = [
   {
     name: "Dr. Jane Foster",
     role: "AI Researcher, MIT",
-    img: "https://via.placeholder.com/200",
+    img: "https://via.placeholder.com/300",
   },
   {
     name: "Elon Reeves",
     role: "CTO, SpaceTech",
-    img: "https://via.placeholder.com/200",
+    img: "https://via.placeholder.com/300",
   },
   {
     name: "Sophia Kwon",
     role: "Cybersecurity Expert",
-    img: "https://via.placeholder.com/200",
+    img: "https://via.placeholder.com/300",
   },
   {
     name: "Rajesh Mehra",
     role: "Lead Data Scientist, Google",
-    img: "https://via.placeholder.com/200",
+    img: "https://via.placeholder.com/300",
   },
 ];
 
@@ -28,8 +28,8 @@ const Speakers = () => {
     <div id="speakers" className="relative bg-black text-white py-20 px-6 md:px-12">
       {/* Floating Background Elements */}
       <div className="absolute w-full h-full">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-r from-blue-500 to-indigo-500 blur-3xl opacity-30"></div>
-        <div className="absolute bottom-10 right-10 w-40 h-40 bg-gradient-to-r from-purple-500 to-pink-500 blur-3xl opacity-40"></div>
+        <div className="absolute top-10 left-10 w-40 h-40 bg-gradient-to-r from-blue-500 to-indigo-500 blur-3xl opacity-30"></div>
+        <div className="absolute bottom-10 right-10 w-48 h-48 bg-gradient-to-r from-purple-500 to-pink-500 blur-3xl opacity-40"></div>
       </div>
 
       {/* Section Title */}
@@ -51,20 +51,20 @@ const Speakers = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 * index, duration: 0.6 }}
             whileHover={{ scale: 1.05 }}
-            className="relative p-6 bg-gray-900 rounded-xl shadow-lg text-center overflow-hidden group"
+            className="relative p-8 bg-gray-900 rounded-xl shadow-lg text-center overflow-hidden group"
           >
             {/* Speaker Image */}
             <img
               src={speaker.img}
               alt={speaker.name}
-              className="w-24 h-24 mx-auto rounded-full border-4 border-transparent group-hover:border-cyan-400 transition-all"
+              className="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full border-4 border-transparent group-hover:border-cyan-400 transition-all"
             />
 
             {/* Speaker Name */}
-            <h3 className="text-xl font-semibold mt-4">{speaker.name}</h3>
+            <h3 className="text-2xl font-semibold mt-6">{speaker.name}</h3>
 
             {/* Speaker Role */}
-            <p className="text-gray-400 text-sm">{speaker.role}</p>
+            <p className="text-gray-400 text-lg mt-2">{speaker.role}</p>
 
             {/* Hover Overlay Effect */}
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 group-hover:opacity-20 transition-all rounded-xl"></div>

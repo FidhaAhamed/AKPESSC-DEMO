@@ -47,13 +47,10 @@ const Events = () => {
         transition={{ duration: 0.8 }}
         className="text-center text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text"
       >
-        Event Highlights
+        Events
       </motion.h2>
 
-      {/* Timeline Bar */}
-      <div className="w-2 mx-auto bg-gradient-to-b from-blue-500 to-cyan-500 h-24 my-6 rounded-lg"></div>
-
-      {/* Event Cards */}
++      {/* Event Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {eventsData.map((event, index) => (
           <motion.div

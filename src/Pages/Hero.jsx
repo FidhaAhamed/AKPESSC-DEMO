@@ -27,12 +27,11 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-black">
-      {/* Background Animated Blobs */}
-      <div className="absolute w-full h-full">
-        <div className="absolute top-10 left-20 w-56 h-56 bg-gradient-to-r from-blue-500 to-purple-600 blur-3xl opacity-40 animate-pulse"></div>
-        <div className="absolute bottom-10 right-20 w-40 h-40 bg-gradient-to-r from-cyan-400 to-green-500 blur-2xl opacity-50 animate-bounce"></div>
-      </div>
+    <div className="relative h-screen flex flex-col justify-center items-center text-center overflow-hidden bg-black bg-cover bg-center"
+      style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-80"></div>
 
       {/* Event Logo */}
       <motion.img
@@ -41,7 +40,7 @@ const Hero = () => {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        className="w-32 md:w-48 lg:w-56 mb-4"
+        className="relative w-32 md:w-48 lg:w-56 mb-4"
       />
 
       {/* Event Host */}
@@ -49,7 +48,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-white text-4xl md:text-6xl font-extrabold tracking-wide bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text"
+        className="relative text-white text-4xl md:text-6xl font-extrabold tracking-wide bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text"
       >
         MACE, Kothamangalam
       </motion.h1>
@@ -59,7 +58,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.8 }}
-        className="text-gray-300 text-2xl md:text-4xl font-bold mt-2"
+        className="relative text-gray-300 text-2xl md:text-4xl font-bold mt-2"
       >
         March 15-17, 2025
       </motion.h2>
@@ -69,7 +68,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.8 }}
-        className="mt-6 flex space-x-4 md:space-x-6  p-4 md:p-6 "
+        className="relative mt-6 flex space-x-4 md:space-x-6 p-4 md:p-6"
       >
         {["Days", "Hours", "Minutes", "Seconds"].map((unit, index) => (
           <div key={unit} className="flex flex-col items-center p-4 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg shadow-md">
