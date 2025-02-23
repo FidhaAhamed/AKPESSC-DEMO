@@ -29,10 +29,10 @@ const Footer = () => {
         {/* Contact Details */}
         <div>
           <h3 className="text-lg font-semibold">Contact</h3>
-          <p className="text-gray-300 mt-2">John Doe</p>
-          <p className="text-gray-400 text-sm">+91 98765 43210</p>
-          <p className="text-gray-300 mt-2">Jane Smith</p>
-          <p className="text-gray-400 text-sm">+91 87654 32109</p>
+          <p className="text-gray-300 mt-2">Rohith K M</p>
+          <p className="text-gray-400 text-sm">+91 7592860445</p>
+          <p className="text-gray-300 mt-2">Fidha Ahamed</p>
+          <p className="text-gray-400 text-sm">+91 8891236906</p>
         </div>
       </div>
 

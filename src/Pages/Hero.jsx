@@ -35,12 +35,12 @@ const Hero = () => {
 
       {/* Event Logo */}
       <motion.img
-        src="/logo.png"
+        src="/akpessc logo.png"
         alt="AKPESSC'25 Logo"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative w-32 md:w-48 lg:w-56 mb-4"
+        className="relative w-56 md:w-96 lg:w-[32rem] xl:w-[40rem] mb-10"
       />
 
       {/* Event Host */}
@@ -48,7 +48,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="relative text-white text-4xl md:text-6xl font-extrabold tracking-wide bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text"
+        className="relative text-white text-4xl md:text-5xl font-extrabold tracking-wide bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text"
       >
         MACE, Kothamangalam
       </motion.h1>

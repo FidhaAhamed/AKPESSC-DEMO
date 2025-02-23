@@ -5,19 +5,19 @@ const ticketOptions = [
   {
     title: "IEEE Member",
     price: "₹799",
-    image: "/images/ieee-ticket.png",
+    image: "/two-retro-tickets.png",
     gradient: "from-gray-700 to-gray-900",
   },
   {
     title: "Non-IEEE Member",
     price: "₹899",
-    image: "/images/non-ieee-ticket.png",
+    image: "/two-yellow-tickets.png",
     gradient: "from-blue-500 to-indigo-500",
   },
   {
     title: "IEEE PES Member",
     price: "₹699",
-    image: "/images/ieee-pes-ticket.png",
+    image: "/two-tickets-blue-front-view-isolated-white.png",
     gradient: "from-purple-500 to-pink-500",
   },
 ];
@@ -49,7 +49,7 @@ const Tickets = () => {
             whileHover={{ scale: 1.05 }}
             className={`relative p-6 bg-gradient-to-b ${ticket.gradient} rounded-xl shadow-lg text-center`}
           >
-            <img src={ticket.image} alt={ticket.title} className="mx-auto w-24 h-24 mb-4" />
+            <img src={ticket.image} alt={ticket.title} className="mx-auto w-32 h-24 mb-4" />
             <h3 className="text-2xl font-semibold">{ticket.title}</h3>
             <p className="text-4xl font-bold text-white my-4">{ticket.price}</p>
             <motion.button

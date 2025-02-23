@@ -5,7 +5,7 @@ import { MapPin } from 'lucide-react';
 const faqs = [
   { question: "What is the event about?", answer: "The event is a gathering of technology enthusiasts to explore innovations and ideas." },
   { question: "How can I register?", answer: "You can register through our official website by filling out the registration form." },
-  { question: "Is there an entry fee?", answer: "No, the event is free for all registered participants." },
+  { question: "Is there an entry fee?", answer: "Yes." },
   { question: "Will there be online participation?", answer: "Yes, we will be streaming key sessions online for remote attendees." }
 ];
 

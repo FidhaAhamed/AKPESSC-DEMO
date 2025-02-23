@@ -4,22 +4,22 @@ const speakersData = [
   {
     name: "Dr. Jane Foster",
     role: "AI Researcher, MIT",
-    img: "https://via.placeholder.com/300",
+    img: "/woman-giving-lecture-audience.jpg",
   },
   {
     name: "Elon Reeves",
     role: "CTO, SpaceTech",
-    img: "https://via.placeholder.com/300",
+    img: "/empowered-business-woman-working-city.jpg",
   },
   {
     name: "Sophia Kwon",
     role: "Cybersecurity Expert",
-    img: "https://via.placeholder.com/300",
+    img: "/medium-shot-woman-working-as-lawyer.jpg",
   },
   {
     name: "Rajesh Mehra",
     role: "Lead Data Scientist, Google",
-    img: "https://via.placeholder.com/300",
+    img: "/senior-business-man-giving-lecture.jpg",
   },
 ];
 

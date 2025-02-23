@@ -2,17 +2,17 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const galleryImages = [
-  { src: "/Images/Gallery/_MG_9645.JPG", width: 400, height: 600 },
-  { src: "/Images/Gallery/_MG_9648.JPG", width: 600, height: 400 },
-  { src: "/Images/Gallery/IMG_9257.JPG", width: 500, height: 500 },
-  { src: "/Images/Gallery/_MG_8474.JPG", width: 700, height: 400 },
-  { src: "/Images/Gallery/_MG_9380.JPG", width: 400, height: 800 },
-  { src: "/Images/Gallery/IMG_8464.JPG", width: 600, height: 600 },
-  { src: "/Images/Gallery/IMG_8547.JPG", width: 500, height: 700 },
-  { src: "/Images/Gallery/IMG_8613.JPG", width: 800, height: 400 },
-  { src: "/Images/Gallery/IMG_8977.JPG", width: 400, height: 500 },
-  { src: "/Images/Gallery/IMG_9284.JPG", width: 400, height: 300 },
-  { src: "/Images/Gallery/IMG_0252.JPG", width: 400, height: 300 },
+  { src: "/Gallery/akson-1K8pIbIrhkQ-unsplash.jpg", width: 400, height: 600 },
+  { src: "/Gallery/front-view-multiracial-group-friends.jpg", width: 600, height: 400 },
+  { src: "/Gallery/joel-muniz-xTkxZN_DV8o-unsplash.jpg", width: 500, height: 500 },
+  { src: "/Gallery/leah-hetteberg-Kb8_42IFMFk-unsplash.jpg", width: 700, height: 400 },
+  { src: "/Gallery/man-smiling-taking-self-photo-him-his-friends-with-trees-background.jpg", width: 400, height: 800 },
+  { src: "/Gallery/omar-lopez-T6zu4jFhVwg-unsplash.jpg", width: 600, height: 600 },
+  { src: "/Gallery/viktor-krc-E7qSsgMsXyA-unsplash.jpg", width: 500, height: 700 },
+  { src: "/Gallery/man-smiling-taking-self-photo-him-his-friends-with-trees-background.jpg", width: 800, height: 400 },
+  { src: "/Gallery/front-view-multiracial-group-friends.jpg", width: 400, height: 500 },
+  { src: "/Gallery/leah-hetteberg-Kb8_42IFMFk-unsplash.jpg", width: 400, height: 300 },
+  { src: "/Gallery/viktor-krc-E7qSsgMsXyA-unsplash.jpg", width: 400, height: 300 },
 ];
 
 const imageVariants = {

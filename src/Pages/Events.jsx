@@ -3,31 +3,31 @@ import { motion } from "framer-motion";
 const eventsData = [
   {
     id: 1,
-    title: "Inauguration Ceremony",
-    date: "March 1, 2025",
-    description: "Kickstart AKPESSC'25 with inspiring keynote speakers and a grand opening.",
-    image: "https://source.unsplash.com/600x400/?conference,energy",
+    title: "Industrial Visit",
+    date: "March 16, 2025",
+    description: "Explore industry-leading technologies and gain hands-on insights through an exclusive industrial visit.",
+    image: "/wind-farms-fields.jpg",
   },
   {
     id: 2,
     title: "Technical Workshops",
-    date: "March 2, 2025",
+    date: "March 15, 2025",
     description: "Hands-on workshops by industry experts on power & energy innovations.",
-    image: "https://source.unsplash.com/600x400/?technology,workshop",
+    image: "/young-man-woman-protective-glasses-doing-experiments-robotics-laboratory.jpg",
   },
   {
     id: 3,
-    title: "Panel Discussions",
-    date: "March 3, 2025",
+    title: "Panel Discussion",
+    date: "March 17, 2025",
     description: "Engage with pioneers in the field discussing the future of sustainable energy.",
-    image: "https://source.unsplash.com/600x400/?discussion,panel",
+    image: "/female-guests-are-sitting-sofa-journalist-taking-interview-morning-show.jpg",
   },
   {
     id: 4,
     title: "Project Expo",
-    date: "March 4, 2025",
+    date: "March 16, 2025",
     description: "A showcase of cutting-edge projects by students and researchers.",
-    image: "https://source.unsplash.com/600x400/?expo,science",
+    image: "/business-person-planning-alternative-energies.jpg",
   },
 ];
 

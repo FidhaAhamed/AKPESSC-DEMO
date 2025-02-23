@@ -1,12 +1,9 @@
 import { motion } from "framer-motion";
 
 const sponsorsData = [
-  { name: "Tesla", img: "https://via.placeholder.com/150" },
-  { name: "Google", img: "https://via.placeholder.com/150" },
-  { name: "Microsoft", img: "https://via.placeholder.com/150" },
-  { name: "Amazon", img: "https://via.placeholder.com/150" },
-  { name: "Intel", img: "https://via.placeholder.com/150" },
-  { name: "SpaceX", img: "https://via.placeholder.com/150" },
+  { name: "Tesla", img: "/tesla-logo-png-2226.png" },
+  { name: "Microsoft", img: "/logo-windows-13518.png" },
+  { name: "Amazon", img: "/amazon-png-logo-vector-6701.png" },
 ];
 
 const Sponsors = () => {
